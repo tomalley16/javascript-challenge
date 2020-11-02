@@ -1,5 +1,6 @@
 // from data.js
 var tableData = data;
+tableData.filter()
 
 var tbody = d3.select("tbody");
 
@@ -46,4 +47,5 @@ data.forEach(function(ufoReport) {
     });
 });
 
-
+// Use a date form in your HTML document and write JavaScript code that will listen for events and search through the date/time column to find rows that match user input.
+d3.filter(date)
