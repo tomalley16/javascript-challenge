@@ -48,4 +48,14 @@ data.forEach(function(ufoReport) {
 });
 
 // Use a date form in your HTML document and write JavaScript code that will listen for events and search through the date/time column to find rows that match user input.
-d3.filter(date)
+
+// Filter data by date
+
+let dateBtn = d3.select("#filter-btn");
+let form = d3.select("form");
+
+dateBtn.on("click, runEnter");
+form.on("submit", runEnter);
+
+
+
